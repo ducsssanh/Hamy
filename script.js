@@ -5,8 +5,8 @@ const buttonsContainer = document.querySelector(".buttons");
 const yesButton = document.querySelector(".btn--yes");
 const noButton = document.querySelector(".btn--no");
 const catImg = document.querySelector(".cat-img");
-var imageList = ["img/cat-2.jpg", "img/cat-3.jpg", "img/cat-4.jpg","img/cat-8.jpg","img/cat-9.jpg","img/cat-13.jpg","img/cat-12.jpg","img/cat-20.jpg","img/cat-18.jpg"];
-var imageList2 = ["img/cat-6.jpg", "img/cat-7.jpg", "img/cat-10.jpg","img/cat-11.jpg","img/cat-14.jpg", "img/cat-16.jpg","img/cat-17.jpg","img/cat-19.jpg"];
+var imageList = ["cat-2.jpg", "cat-3.jpg", "cat-4.jpg","cat-8.jpg","cat-9.jpg","cat-13.jpg","cat-12.jpg","cat-20.jpg","cat-18.jpg"];
+var imageList2 = ["cat-6.jpg", "cat-7.jpg", "cat-10.jpg","cat-11.jpg","cat-14.jpg", "cat-16.jpg","cat-17.jpg","cat-19.jpg"];
 var currentIndex = 0;
 var currentIndex1 = 0;
 const MAX_IMAGES = 5;
@@ -82,7 +82,7 @@ function generateMessage(noCount) {
 }
 
 function changeImage(image) {
-  catImg.src = `img/cat-${image}.jpg`;
+  catImg.src = `cat-${image}.jpg`;
 }
 function changeImage2() {
     catImg.src = imageList[currentIndex];
